@@ -7,7 +7,9 @@ Folder yang pertama kali diakses ada /public/index.php
 pada localhost file selain yang ditentukan masih bisa diakses oleh user dan belum setting dengn .htaccess
 
 framework ini masih dalam tahap pengembangan, masih perlu menambahkan bebarapa function, terutama dalam hal database.
-
 kekurangan yang terlihat pada update kali ini adalah :
-1. penulisan url masih belum menerapkan preety url
-2. tidak bisa mengakses method pada sebuah class hanya dengan mengakses url(masih perlu pembelajaran)
+1. penulisan url masih belum menerapkan pretty url
+2. tidak bisa mengakses method pada sebuah class hanya dengan mengakses url(masih perlu pendalaman);
+3. error handler masih belum di perbaiki, akan sedikit sulit untuk mengidentifikasi kesalahan
+4. penulisan code terkesan belum rapih, dan masih butuh pengevaluasian.
+
