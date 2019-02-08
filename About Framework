@@ -1,0 +1,13 @@
+About Framework
+=======================
+framework yang dikerjakan menggunakan component dari Symfony. menggunakan driver PDO yang dapat memudahkan dalam penggantian Database Engine.
+
+Folder yang pertama kali diakses ada /public/index.php
+
+pada localhost file selain yang ditentukan masih bisa diakses oleh user dan belum setting dengn .htaccess
+
+framework ini masih dalam tahap pengembangan, masih perlu menambahkan bebarapa function, terutama dalam hal database.
+
+kekurangan yang terlihat pada update kali ini adalah :
+1. penulisan url masih belum menerapkan preety url
+2. tidak bisa mengakses method pada sebuah class hanya dengan mengakses url(masih perlu pembelajaran)
