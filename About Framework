@@ -12,4 +12,5 @@ kekurangan yang terlihat pada update kali ini adalah :
 2. tidak bisa mengakses method pada sebuah class hanya dengan mengakses url(masih perlu pendalaman);
 3. error handler masih belum di perbaiki, akan sedikit sulit untuk mengidentifikasi kesalahan
 4. penulisan code terkesan belum rapih, dan masih butuh pengevaluasian.
+5. test
 
