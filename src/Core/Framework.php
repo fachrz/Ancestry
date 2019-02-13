@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Matcher\UrlMatcher;
 
 class Framework
 {
-    protected $mather;
+    protected $matcher;
     protected $controllerResolver;
     protected $argumentResolver;
 
@@ -31,6 +31,7 @@ class Framework
             $arguments = $this->argumentResolver->getArguments($request, $controller);
 
             return call_user_func_array($controller, $arguments);
+            
         } catch (ResourceNotFoundException $except) {
             return new Response('Not Found', 404);
         }catch (\Exception $except){

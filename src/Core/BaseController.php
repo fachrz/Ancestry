@@ -4,7 +4,7 @@ namespace Core;
 use Core\Providers\TwigServiceProvider;
 use Symfony\Component\HttpFoundation\Response;
 
-class App{
+class BaseController{
     private $config;
     private $view;
     private $model;
