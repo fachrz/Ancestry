@@ -8,7 +8,7 @@ pada localhost file selain yang ditentukan masih bisa diakses oleh user dan belu
 
 framework ini masih dalam tahap pengembangan, masih perlu menambahkan bebarapa function, terutama dalam hal database.
 kekurangan yang terlihat pada update kali ini adalah :
-1. penulisan url masih belum menerapkan pretty url
+1. penulisan url masih belum menerapkan pretty url(Done)
 2. tidak bisa mengakses method pada sebuah class hanya dengan mengakses url(masih perlu pendalaman);
 3. error handler masih belum di perbaiki, akan sedikit sulit untuk mengidentifikasi kesalahan
 4. penulisan code terkesan belum rapih, dan masih butuh pengevaluasian.
