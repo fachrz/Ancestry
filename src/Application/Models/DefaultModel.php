@@ -8,7 +8,7 @@ class DefaultModel{
         $this->db = new Database;
     }
     public function getAllSiswa(){
-        $this->db->query("SELECT * FROM siswa");
+        $this->db->query("SELECT * FROM Data_Konter");
         return $this->db->resultSet();
     }
     

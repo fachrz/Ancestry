@@ -15,16 +15,19 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Umur</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">nama</th>
+                        <th scope="col">umur</th>
+                        <th scope="col">Tanggal Lahir</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for d_siswa in siswa %}
-                    <tr>    
-                        <th scope="row">1</th>
-                            <td>{{d_siswa.name}}</td>
-                            <td>{{d_siswa.age}}</td>
+                    <tr>    <td>1</td>
+                            <td>{{d_siswa.Email}}</td>
+                            <td>{{d_siswa.nama}}</td>
+                            <td>{{d_siswa.umur}}</td>
+                            <td>{{d_siswa.tgl_lahir}}</td>
                     </tr>
                     {% endfor %}  
                 </tbody>
