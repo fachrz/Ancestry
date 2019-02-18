@@ -10,6 +10,9 @@ $routes->add('home_page', new Routing\Route('/', [
 $routes->add('jsondata', new Routing\Route('/jsondata', [
     '_controller' => 'Application\Controllers\Home::jsondata'
 ]));
+$routes->add('edit_page', new Routing\Route('/edit/{email}', [
+    '_controller' => 'Application\Controllers\Home::edit'
+]));
 
 return $routes;
 ?>

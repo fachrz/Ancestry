@@ -4,7 +4,7 @@
 
     class DatabaseServiceProvider extends ServiceProvider
     {
-        public function provide(){
+        public function provide(array $options = []){
             $servername = $this->config['servername'];
             $db_name = $this->config['db_name'];
             $username = $this->config['username'];

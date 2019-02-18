@@ -12,7 +12,9 @@ $request = Request::createFromGlobals();
 // $requestStack = new RequestStack();
 $routes = include __DIR__.'/../config/routes.php';
 
+
 $context = new Routing\RequestContext();
+
 $matcher = new Routing\Matcher\UrlMatcher($routes, $context);
 $controllerResolver = new HttpKernel\Controller\ControllerResolver();
 $argumentResolver = new HttpKernel\Controller\ArgumentResolver();

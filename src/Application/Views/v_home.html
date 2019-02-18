@@ -19,6 +19,7 @@
                         <th scope="col">nama</th>
                         <th scope="col">umur</th>
                         <th scope="col">Tanggal Lahir</th>
+                        <th scope="col">Options</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -28,6 +29,8 @@
                             <td>{{d_siswa.nama}}</td>
                             <td>{{d_siswa.umur}}</td>
                             <td>{{d_siswa.tgl_lahir}}</td>
+                            <td><a href="{{ url('edit_page', {'email' : d_siswa.Email}) }}">Edit</a></td>
+                            
                     </tr>
                     {% endfor %}  
                 </tbody>

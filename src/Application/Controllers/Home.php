@@ -21,5 +21,8 @@ class Home extends BaseController{
 
         return new Response($jsondata);
         
+    }public function edit($email){
+        $data['email'] = $email;
+        return $this->render('v_edit.html', $data);
     }
 }
