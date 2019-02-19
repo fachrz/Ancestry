@@ -15,21 +15,27 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">nama</th>
-                        <th scope="col">umur</th>
-                        <th scope="col">Tanggal Lahir</th>
+                        <th scope="col">user_ID</th>
+                        <th scope="col">username</th>
+                        <th scope="col">first_name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">Status</th>
                         <th scope="col">Options</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for d_siswa in siswa %}
                     <tr>    <td>1</td>
-                            <td>{{d_siswa.Email}}</td>
-                            <td>{{d_siswa.nama}}</td>
-                            <td>{{d_siswa.umur}}</td>
-                            <td>{{d_siswa.tgl_lahir}}</td>
-                            <td><a href="{{ url('edit_page', {'email' : d_siswa.Email}) }}">Edit</a></td>
+                            <td>{{d_siswa.user_id}}</td>
+                            <td>{{d_siswa.username}}</td>
+                            <td>{{d_siswa.first_name}}</td>
+                            <td>{{d_siswa.last_name}}</td>
+                            <td>{{d_siswa.gender}}</td>
+                            <td>{{d_siswa.password}}</td>
+                            <td>{{d_siswa.status}}</td>
+                            <td><a href="{{ url('delete', {'user_id' : d_siswa.user_id}) }}" onclick="return confirm('serius?')">Delete</a></td>
                             
                     </tr>
                     {% endfor %}  

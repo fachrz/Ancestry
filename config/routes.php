@@ -13,6 +13,9 @@ $routes->add('jsondata', new Routing\Route('/jsondata', [
 $routes->add('edit_page', new Routing\Route('/edit/{email}', [
     '_controller' => 'Application\Controllers\Home::edit'
 ]));
+$routes->add('delete', new Routing\Route('/delete/{user_id}', [
+    '_controller' => 'Application\Controllers\Home::delete'
+]));
 
 return $routes;
 ?>
