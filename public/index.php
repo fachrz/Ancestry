@@ -11,9 +11,11 @@ use Symfony\Component\Routing;
 $request = Request::createFromGlobals();
 // $requestStack = new RequestStack();
 $routes = include __DIR__.'/../config/routes.php';
+$config = include __DIR__.'/../config/config.php';
 
 
-$context = new Routing\RequestContext();
+$requestContext = new Routing\RequestContext();
+$context = $requestContext->setBaseUrl($config['baseUrl']);
 
 $matcher = new Routing\Matcher\UrlMatcher($routes, $context);
 $controllerResolver = new HttpKernel\Controller\ControllerResolver();

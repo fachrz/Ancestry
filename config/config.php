@@ -1,6 +1,7 @@
 <?php
 
 return[
+    'baseUrl' => '/Framework/public',
     'twig' => [
         'dir' => __DIR__.'/../src/Application/Views/',
         'cache' => '/tmp/cache',
