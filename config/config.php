@@ -13,5 +13,3 @@ return[
         'password' => 'fachru1609',
     ]
 ];
-
-?>

@@ -17,5 +17,13 @@ $routes->add('delete', new Routing\Route('/delete/{user_id}', [
     '_controller' => 'Application\Controllers\Home::delete'
 ]));
 
+//Api Routes
+$routes->add('getRestAPI', new Routing\Route('/get', [
+    '_controller' => 'Application\Controllers\Api_controller::getApi'
+]));
+$routes->add('setRestAPI', new Routing\Route('/set', [
+    '_controller' => 'Application\Controllers\Api_controller::setApi'
+]));
+
 return $routes;
 ?>
