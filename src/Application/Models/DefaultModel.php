@@ -10,7 +10,7 @@ class DefaultModel{
         $this->db = new Database;
         
     }
-    public function getAllSiswa()
+    public function getData()
     {
 
         $this->db->query("SELECT * FROM user_details");
@@ -18,12 +18,13 @@ class DefaultModel{
 
     }
     public function deleteData($user_id)
-    {
+    {   
+        $query = "DELETE FROM user_details WHERE user_id = :userid";
 
-        $this->db->query("DELETE FROM user_details WHERE user_id = :userid");
+        $this->db->query($query);
         $this->db->bind('userid', $user_id);
 
-        return $this->db->execute();
+        return $this->db->execute("sukses");
 
     }
     

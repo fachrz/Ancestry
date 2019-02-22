@@ -22,7 +22,7 @@ $routes->add('getRestAPI', new Routing\Route('/get', [
     '_controller' => 'Application\Controllers\Api_controller::getApi'
 ]));
 $routes->add('setRestAPI', new Routing\Route('/set', [
-    '_controller' => 'Application\Controllers\Api_controller::setApi'
+    '_controller' => 'Application\Controllers\Api_controller::postApi'
 ]));
 
 return $routes;
